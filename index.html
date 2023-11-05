@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            /* border: 1px solid red; */
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 4px 10px rgb(2, 9, 11);
+            
+
+        }
+        h2{
+            /* border: 1px solid blue; */
+            color: white;
+            height: 70px;
+            margin-left: 50px;
+            padding: 18px;
+            margin-top: 30px;
+            color: white;
+  text-shadow: 2px 2px 4px #000000;
+        }
+        header img{
+            /* border: 1px solid green; */
+            height: 115px;
+            border-radius: 70%;
+            box-shadow: 5px 4px 10px rgb(2, 9, 11);
+        }
+        body{
+            background-color: rgb(45, 45, 45);
+            color: white;
+        }
+        
+        .container{
+            /* border: 1px solid white; */
+            margin-left: 23%;
+            margin-right: 15%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 50px;
+            justify-content: space-evenly;
+
+        }
+        .container .boxes{
+            /* border: 1px solid red; */
+           background-color:white; 
+            height: 250px;
+            color: black;
+            width: 250px;
+            border-radius: 5px;
+            /* margin-left: 30px;
+           
+            margin-top: 20px; */
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 30px;
+            box-shadow: 5px 5px 10px #000000;
+         
+        }
+        .container .boxes a img{
+            /* border: 1px solid blue; */
+            width: 250px;
+            height: 150px;
+           
+            border-radius: 5px 5px 0 0; /*only upper part*/
+
+
+        }
+        .container .boxes #proj-head{
+            font-size: 15px;
+            padding-left: 10px;
+            margin-top: 15px;
+        }
+        .container .boxes #proj-para{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        .what{
+            height: 40px;
+            margin-left: 20%;
+            margin-top: 10px;
+        }
+        .left-part{
+            /* border: 1px solid white; */
+           border-radius: 5px;
+            margin-left: 10px;
+            width: 68%;
+            margin-left: 20%;
+            
+            height: 100px;
+            background-color: #333333;
+            /* float: inherit; */
+
+            
+        }
+        .left-part sub{
+            margin-left: 20px;
+            font-size: 15px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', ;
+            color: rgb(117, 116, 116);
+        }
+        .left-part .sub-boxes{
+            /* border: 1px solid blue; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 18px;
+            align-items: center;
+            
+
+            /* justify-content: space-between; */
+        }
+        
+        .left-part .sub-boxes p{
+            /* border: 2px solid red; */
+           background-color: #2c2c2c;
+            
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 13px;
+            
+            
+        }
+        .left-part .sub-boxes #change{
+            /* border: 2px solid red; */
+            
+            margin-left: 10px;
+        }
+        .left-part .sub-boxes #change1{
+            border: 1px solid red;
+            
+            margin-left: 10px;
+        }
+        .left-part .sub-boxes #change2{
+            border: 1px solid rgb(203, 6, 247);
+            
+            margin-left: 10px;
+        }
+        .bottom2-part{
+             /* border: 1px solid white; */
+           border-radius: 5px;
+            margin-left: 10px;
+            width: 68%;
+            margin-left: 20%;
+            margin-top: 20px;
+            height: 100px;
+            background-color: #333333;
+            margin-bottom: 20px;
+            /* float: inherit; */
+
+        }
+        .bottom2-part sub{
+            margin-left: 20px;
+         
+            font-size: 15px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', ;
+            color: rgb(117, 116, 116);
+        }
+        .bottom2-part .sub-boxes{
+            /* border: 1px solid blue; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 18px;
+            align-items: center;
+            
+
+            /* justify-content: space-between; */
+        }
+        
+        .bottom2-part .sub-boxes p{
+            /* border: 2px solid red; */
+           background-color: #2c2c2c;
+            
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 13px;
+            
+            
+        }
+        .bottom2-part .sub-boxes #change{
+            /* border: 2px solid red; */
+            
+            margin-left: 10px;
+        }
+        .bottom2-part .sub-boxes #change1{
+            border: 1px solid red;
+            
+            margin-left: 10px;
+        }
+        .bottom2-part .sub-boxes #change2{
+            border: 1px solid rgb(203, 6, 247);
+            
+            margin-left: 10px;
+        }
+        h3{
+            /* border: 1px solid red;*/margin-left: 20%;
+            margin-top: 15px;
+        }
+        footer{
+            /* border: 1px solid blue; */
+            
+            display :flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        footer img{
+            width: 30px;
+            border-radius: 25%;
+
+
+        }
+        footer #git{
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="suman.jpg" alt="">
+        <h2>Suman Saha</h2>
+        
+    </header>
+    <h3>Projects</h3>
+    <div class="container">
+        <div class="boxes">
+            <a href="https://vcpofficial.github.io/project-vcp/" target="_blank"><img src="vt.png" alt="" ></a>
+            <!-- <h4 id="proj-head">Voice Note Maker</h4> -->
+            <strong id="proj-head">Voice Note Maker</strong>
+            <p id="proj-para"><br>HTML, CSS, JavaScript, Bootstrap, PHP</p>
+        </div>
+        <div class="boxes">
+            <a href="https://github.com/Suman196/hand-gesture-mouse-volumebar/blob/main/main.py" target="_blank"><img src="vm.png" alt="" ></a>
+            <!-- <h4 id="proj-head">Voice Note Maker</h4> -->
+            <strong id="proj-head">Virtual Mouse</strong>
+            <p id="proj-para"><br> Python, Computer Vision, Machine Learning</p>
+
+        </div>
+        <!-- <div class="boxes">
+
+        </div>
+        <div class="boxes">
+
+        </div> -->
+    </div>
+    <div class="what">
+        <h4>What I Know</h4>
+    </div>
+    <div class="left-part">
+      <sub>Frontend</sub>
+      <div class="sub-boxes">
+        <p>HTML</p>
+        <p id="change">CSS</p>
+        <p id="change1">JavaScript</p>
+        
+        
+        
+      </div>
+        
+
+    </div>
+    <div class="bottom2-part">
+      <sub>Database</sub>
+      <div class="sub-boxes">
+        <p>MySQL</p>
+       
+        
+        
+      </div>
+        
+
+    </div>
+    <div class="bottom2-part">
+        <sub>Machine Learning</sub>
+        <div class="sub-boxes">
+          <p>Project Jupyter</p>
+          <p id="change1">Scikit-learn</p>
+          <p id="change2">PyTorch</p>
+          <p id="change">NumPy</p>
+         
+          
+          
+        </div>
+          
+  
+    </div>
+    <div class="bottom2-part">
+        <sub>Data Analysis</sub>
+        <div class="sub-boxes">
+          <p>Python</p>
+          <p id="change">Project Jupyter</p>
+          <p id="change1">Power BI</p>
+         
+          
+          
+        </div>
+          
+  
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/suman-saha-314535219" target="_blank"><img src="link.png" alt="" ></a>
+        <a id="git" href="https://github.com/Suman196" target="_blank"><img 
+             src="git.png" alt="" ></a>
+        <a id="git" href="http://"><img 
+                src="me.png" alt="" ></a>
+       
+         <a id="git" href="mailto:sumansaha0178@gmail.com"><img 
+            src="mail.png" alt="" ></a>
+    </footer>
+    
+    
+</body>
+</html>
